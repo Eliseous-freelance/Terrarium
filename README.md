@@ -1,15 +1,15 @@
-##Data Driven Terrarium
-Project Aim 
+<h1>Data Driven Terrarium</h1>
+<h2>Project Aim</h2> 
 To use Data Science for autonomous environment monitor and ecosystem correction.
 
-Components 
+<h2>Components</h2>
 A terrarium requires an optimal tempeurature, humidity and air pressure. Therefore we will use a Raspberry Pi Pico, a cheap  single-component circuit. 
 This board uses MicroPython, which is an emerging method for data logging and electronics.
 
-Applications
+<h2>Applications</h2>
 High temperatures have nocive repercussions on plants. As a consequence of this, NASA has been monitoring climate change’s correlation with heated plants and wildfires; using ecosystem monitor plants could be kept at optimal temperatures. 
 
-Experimentation 
+<h2>Experimentation</h2> 
 Take a container, and add charcoal for the drainage layer. Fertilising soil comes next. Finally, add those tangled low-lights plants.
 Sensors allow for environmental parameters to be established. Computer vision techniques allow measuring growth and environmental changes. 
 
@@ -26,5 +26,5 @@ Colour analysis for plant growth
 Movement detector for plant growth and fauna
 </ul>
 
-#What we hope to achieve
+<h2>What we hope to achieve</h2>
 Our goal is to reduce the scalability of wide-ranging environmental instabilit problems into a small-scale project that is a terrarium. By using the small-scale monitoring it should allow us to draw insights into the effects of changes within an ecosystem, and how technology impacts the temperature of plants. This research will develop an ecosystem library that oculd be deployed easily. 
