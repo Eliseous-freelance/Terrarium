@@ -4,17 +4,24 @@ import board
 import lib.adafruit_dht as adafruit_dht
 import analogio
 
+import os
 import json
+import io
+
+#import sys
 
 #temperature and humdity
 dht = adafruit_dht.DHT11(board.GP27)
 adc = analogio.AnalogIn(board.GP26)
 
+#sys.path.append('/')
 #light intensity
 def getIntense(sensor):
    return (sensor.value / 65535 * adc.reference_voltage)/3.7
 
 
+print(os.uname())
+print(os.listdir('/'))
 
 while True:
     temperature = dht.temperature
@@ -38,7 +45,7 @@ while True:
     print(json.dumps(data))
 
     try:
-        file_ = open('/data.json')
+        file_ = io.open('data.json')
         
         file_.write(json.dumps(data))
         file_.close()
@@ -47,3 +54,4 @@ while True:
         
     #if os.dir.exists('/documents/terrarium_data/'):
     #   pd.DataFrame(data).to_csv('/Documents/terrarium_data/data.csv')
+
